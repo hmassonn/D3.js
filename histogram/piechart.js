@@ -47,13 +47,14 @@ let pure = epurTab(jsonObj);
 
 (function(d3) {
         'use strict';
-
-        var width = 700;
-        var height = 700;
+        var width = 800;
+        var height = 800;
+		var deltaY = 700;
+		var deltaX = 160;
+		var legendRectSize = 18;
+		var legendSpacing = 4;
         var radius = Math.min(width, height) / 2;
-
         var color = d3.scaleOrdinal(d3.schemeCategory20b);
-
         var svg = d3.select("body")
           .append('svg')
           .attr('width', width)
@@ -78,5 +79,38 @@ let pure = epurTab(jsonObj);
           .attr('fill', function(d) {
             return color(d.data[0]);
           });
+
+		  var legend = d3.select("body")
+			.append('svg')
+			.attr('width', width)
+			.attr('height', height+deltaY)
+		  	.selectAll('.legend')
+           	.data(color.domain())
+           	.enter()
+           	.append('g')
+           	.attr('class', 'legend')
+           	.attr('transform', function(d, i) {
+		         var height = legendRectSize + legendSpacing;
+		         var offset =  height * color.domain().length / 2;
+		         var horz = -2 * legendRectSize;
+		         var vert = i * height - offset + deltaY;
+	             return 'translate(' + horz + ',' + vert + ')';
+           	});
+
+         legend.append('rect')
+           .attr('width', legendRectSize + deltaX)
+           .attr('height', legendRectSize)
+           .style('fill', color)
+           .style('stroke', color);
+
+         legend.append('text')
+           .attr('x', legendRectSize + legendSpacing + 20)
+           .attr('y', legendRectSize - legendSpacing)
+           .text(function(d) { return d; });
+
+		legend.append('text')
+		 .attr('x', legendRectSize + legendSpacing + deltaX)
+		 .attr('y', legendRectSize - legendSpacing)
+		 .text(function(d, i) { return i; });
 
       })(window.d3);
