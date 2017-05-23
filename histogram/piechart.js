@@ -111,6 +111,6 @@ let pure = epurTab(jsonObj);
 		legend.append('text')
 		 .attr('x', legendRectSize + legendSpacing + deltaX)
 		 .attr('y', legendRectSize - legendSpacing)
-		 .text(function(d, i) { return i; });
+		 .text(function(d, i) { return pure[i][1]; });
 
       })(window.d3);
