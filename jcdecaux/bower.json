@@ -1,0 +1,33 @@
+{
+  "name": "datahub",
+  "description": "mockup",
+  "main": "index.js",
+  "authors": [
+    "hugo"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "hugo",
+    "gohu",
+    "ogre181",
+    "hmasson",
+    "hmassonet",
+    "olag"
+  ],
+  "homepage": "https://github.com/arialwhite/JCDecauxTests",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lato": "^0.3.0",
+    "d3": "^4.9.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "meyer-reset": "*",
+    "css-reset": "^2.5.1"
+  }
+}
