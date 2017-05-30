@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	background: #eee;
+	width: 100%;
+}
+
+header {
+	width: 100%;
+	height: 200px;
+	background: #282828;
+}
+
+h4 {
+	color: white;
+	margin-top: 0;
+	float: left;
+	height: 40px;
+	padding: 10px 20px 0 20px;
+	border-right: 4px solid black;
+}
+
+#logo {
+	width: 200px;
+	height: 200px;
+	display: block;
+	float: left;
+}
+
+.jdc-title {
+	display: block;
+	float: left;
+	color: white;
+	font-weight: bold;
+	margin: 55px 0 0 50px;
+}
+
+.sub-header {
+	background: #FB4934;
+	height: 40px;
+}
+
+#chart {
+	   height: 360px;
+	   position: relative;
+	   width: 360px;
+	 }
+
+.tooltip {
+	background: #eee;
+	box-shadow: 0 0 5px #999999;
+	color: #333;
+	display: none;
+	font-size: 12px;
+	left: 130px;
+	padding: 10px;
+	position: absolute;
+	text-align: center;
+	top: 95px;
+	width: 80px;
+	z-index: 10;
+}
+
+.legend {
+	font-size: 12px;
+}
+
+rect {
+	cursor: pointer;
+	stroke-width: 2;
+}
+
+rect.disabled {
+	fill: transparent !important;
+}
