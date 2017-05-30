@@ -1,0 +1,38 @@
+{
+  "name": "datahub",
+  "version": "1.0.0",
+  "description": "mockup",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "lint": "eslint src/**/*.js",
+    "serve": "gulp browser-sync"
+  },
+  "engines": {
+    "node": ">=6.9.5",
+    "npm": ">=3.10.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arialwhite/JCDecauxTests.git"
+  },
+  "keywords": [
+    "hugo",
+    "gohu",
+    "ogre181",
+    "hmasson",
+    "hmassonet",
+    "olag"
+  ],
+  "author": "hugo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arialwhite/JCDecauxTests/issues"
+  },
+  "homepage": "https://github.com/arialwhite/JCDecauxTests#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "eslint": "^3.19.0",
+    "gulp": "^3.9.1"
+  }
+}
