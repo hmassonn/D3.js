@@ -5,8 +5,7 @@
 html, body {
 	background: #eee;
 	width: 100%;
-	font-family: 'Lato';
-
+	font-family: 'Lato' !important;
 }
 
 header {
@@ -20,6 +19,7 @@ h4 {
 	margin-top: 0;
 	float: left;
 	height: 40px;
+	font-weight: bold;
 	padding: 10px 20px 0 20px;
 	border-right: 4px solid black;
 }

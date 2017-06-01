@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Visualization</title>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+	<link href="bower_components/css-reset/reset.min.css" rel="stylesheet">
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="bower_components/lato/css/lato.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
   </head>
   <body>
 	<header>
@@ -19,14 +21,17 @@
 		<h4><a href="index.html" style="color:white">HOME</a></h4>
 		<h4><a href="histograms.html" style="color:white">HISTOGRAMS</a></h4>
 		<h4><a href="piechart.html" style="color:white">PIE CHART</a></h4>
+		<h4><a href="tests.html" style="color:white">TESTS</a></h4>
 	</div>
     <div style="margin-top:100px" class="container">
       <h2>Temperature Changes</h2>
       <div id="viz"></div>
+	  <h2>Humidity Changes</h2>
+	  <div id="viz2"></div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.js"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
